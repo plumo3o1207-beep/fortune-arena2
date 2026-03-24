@@ -4,15 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>命運競技場</title>
-
 <style>
-
-/* =========================
-   全站基礎設定
-========================= */
-
 body{
   margin:0;
   font-family:"Noto Sans TC",sans-serif;
@@ -20,11 +13,6 @@ body{
   color:white;
   line-height:1.6;
 }
-
-/* =========================
-   Header 區（動畫封面）
-========================= */
-
 header{
   padding:40px 20px 60px;
   text-align:center;
@@ -32,13 +20,11 @@ header{
   background-size:300% 300%;
   animation:bgShift 14s ease-in-out infinite;
 }
-
 @keyframes bgShift{
   0%{background-position:0% 50%;}
   50%{background-position:100% 50%;}
   100%{background-position:0% 50%;}
 }
-
 .channel-name{
   font-size:40px;
   font-weight:900;
@@ -47,43 +33,33 @@ header{
   color:white;
   animation:glowSmooth 14s linear infinite;
 }
-
 @keyframes glowSmooth{
   0%{ text-shadow:0 0 6px #7a4dff, 0 0 18px #6a00ff; }
   50%{ text-shadow:0 0 8px #ff3c6d, 0 0 22px #ff0055; }
   100%{ text-shadow:0 0 6px #7a4dff, 0 0 18px #6a00ff; }
 }
-
 header h1{
   margin:0;
   margin-top:-4px;
   font-size:50px;
   animation:floatTitle 6s ease-in-out infinite;
 }
-
 @keyframes floatTitle{
   0%,100%{transform:translateY(0);}
   50%{transform:translateY(-2px);}
 }
-
 header p {
   margin-top: 12px;
   font-size: 18px;
   color: #ffcc00;
   margin-left: 12px;
 }
-
-/* =========================
-   社群按鈕
-========================= */
-
 .social-links{
   margin-top:32px;
   display:flex;
   justify-content:center;
   gap:22px;
 }
-
 .social-links a{
   text-decoration:none;
   padding:12px 24px;
@@ -93,86 +69,62 @@ header p {
   display:flex;
   align-items:center;
 }
-
 .twitch-btn{
   background:#9146FF;
   color:white;
   box-shadow:0 0 10px #9146FF;
 }
-
 .twitch-btn:hover{
   transform:scale(1.08);
   box-shadow:0 0 25px #9146FF;
 }
-
 .donate-btn{
   background:#ffcc00;
   color:black;
   box-shadow:0 0 8px #ffcc00;
 }
-
 .donate-btn:hover{
   transform:scale(1.08);
 }
-
 .twitch-icon{
   width:18px;
   height:18px;
   margin-right:8px;
   fill:white;
 }
-
-/* =========================
-   內容區
-========================= */
-
 .container{
   max-width:600px;
   margin:0 auto;
   padding:0 20px;
 }
-
 h2{
   color:#ff2e63;
   margin-top:48px;
 }
-
 h3{
   margin-left:40px;
   margin-top:18px;
 }
-
 p,ul{
   margin-left:80px;
   margin-top:10px;
 }
-
 ul{
   padding-left:20px;
 }
-
 ul li{
   margin-bottom:6px;
 }
-
-/* 備註 */
-
 .note{
   margin-left:99px;
   margin-top:-20px;
   opacity:0.75;
   font-size:14px;
 }
-
-/* =========================
-   FREE 霓虹標籤
-========================= */
-
 @keyframes neonFlicker{
   0%,100%{opacity:1;}
   50%{opacity:0.9;}
 }
-
 .neon-box{
   display:inline-flex;
   justify-content:center;
@@ -191,11 +143,6 @@ ul li{
   box-shadow:0 0 5px #0099ff,inset 0 0 5px #003366;
   animation:neonFlicker 1.5s infinite alternate;
 }
-
-/* =========================
-   高亮標籤
-========================= */
-
 .payment-highlight{
   background:#ff0055;
   color:#fff;
@@ -204,7 +151,6 @@ ul li{
   display:inline-block;
   margin:3px;
 }
-
 .action-highlight{
   background:#ffcc00;
   color:#000;
@@ -214,11 +160,6 @@ ul li{
   font-weight:bold;
   margin-right:10px;
 }
-
-/* =========================
-   Footer
-========================= */
-
 footer{
   text-align:center;
   padding:20px;
@@ -226,50 +167,34 @@ footer{
   font-size:14px;
   color:#888;
 }
-
 </style>
 </head>
 
 <body>
-
 <header>
-
 <div class="channel-name">不想上班的酸梅の</div>
-
 <h1>🎡 命運競技場 🎡</h1>
-
 <p>全民操盤 · 命運轉動 · 直播進化</p>
-
 <div class="social-links">
-
 <a href="https://www.twitch.tv/plumo3o" target="_blank" class="twitch-btn">
-
 <svg class="twitch-icon" viewBox="0 0 24 24">
 <path d="M4 2L2 6v14h5v2h2l2-2h3l4-4V2H4zm13 13l-2 2h-3l-2 2v-2H6V4h11v11z"/>
 <rect x="10" y="8" width="2" height="5"/>
 <rect x="14" y="8" width="2" height="5"/>
 </svg>
-
 Twitch
 </a>
-
 <a href="https://nekolive.net/%E4%B8%8D%E6%83%B3%E4%B8%8A%E7%8F%AD%E7%9A%84%E9%85%B8%E6%A2%85" target="_blank" class="donate-btn">
 💰 贊助支持
 </a>
-
 </div>
-
 </header>
 
 <div class="container">
 <section>
-
 <h2><span class="neon-box">FREE</span> 一、免費轉（忠誠點）</h2>
-
 <h3>🔹 25,000 忠誠點 = 轉盤一次</h3>
-
 <h3>🔹 當輪操作（可累加，僅當輪有效）</h3>
-
 <ul>
 <li>1,000 點 = 指定格 +0.1 比重</li>
 <li>1,000 點 = 隨機洗牌一次</li>
@@ -277,25 +202,18 @@ Twitch
 <li>1,000 點 = 改為一次慢轉</li>
 <li>5,000 點 = 刪除一個不想要的格子</li>
 </ul>
-
 <h3>🔹 新增遊戲（一次性/當次可累加）</h3>
-
 <p>100,000 點 = 轉盤新增一款遊戲</p>
 <p class="note">(每款遊戲皆從遊玩5分鐘 / 比重1 起跳)</p>
-
 <h3>🔹 永久型點數機制</h3>
-
 <p>5,000 點 = 永久新增「減時 30 分鐘」格子</p>
-
 <ul>
 <li>每兌換一次 → 該格 +0.1 比重</li>
 <li>無上限，CD 半小時</li>
 </ul>
 
 <h2>💰 二、課金轉（高階命運轉）</h2>
-
 <p>500 元 / 10 訂閱 / 1000 小奇點 = 轉盤一次</p>
-
 <p>
 <span class="payment-highlight">👉 立即生效</span>
 <span class="payment-highlight">👉 可插隊</span>
@@ -303,38 +221,28 @@ Twitch
 </p>
 
 <h2>📊 三、永久投資機制</h2>
-
 <ul>
 <li>100 元 = 指定格 +0.1 比重（永久，單項上限至 5）</li>
 <li>500 元 = 指定格 -0.1 比重（永久，單項下限至 1）</li>
 <li>3,000 元 = 強制指定一次（限當輪）</li>
 <li>1,000 元 = 轉盤永久新增一款遊戲（可冠名）</li>
 </ul>
-
-<p class="note">(每款遊戲皆從遊玩5分鐘 / 比重1 起跳)</p>
+<p class="note">(每款遊戲皆從遊玩20分鐘 / 比重1 起跳)</p>
 
 <h2>🔥 四、刺激系統</h2>
-
 <h3>🔹 諸神黃昏</h3>
-
 <p>怒氣條集滿 50 點(免費+1，課金+3) → 狂暴輪</p>
 
 <h2>🏆 五、排行榜制度</h2>
-
 <h3>👑 當日榜首</h3>
-
 <p>獲得「命運操盤手」頭銜</p>
-
 <p>
 <span class="action-highlight">🎲 重轉</span>
 或
 <span class="action-highlight">🎲 強制翻倍</span>
 </p>
-
 <h3>🥇 當日前三名</h3>
-
 <p>獲得 7 天 VIP 稱號</p>
-
 </section>
 </div>
 
